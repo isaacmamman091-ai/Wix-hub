@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>WIX HUB | Premium Website Design for Global Brands</title>
+  <meta name="description" content="WIX HUB – Professional website designer in Niger State, serving global clients. Custom, fast, conversion-focused sites built in 3-5 days. Order via WhatsApp or live chat.">
+  <meta name="keywords" content="website designer Nigeria, premium web design, global website developer, business website, landing page, WIX HUB">
+  <meta name="author" content="WIX HUB">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Tailwind + Fonts + Custom Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: '#0A0A0A',
+            offwhite: '#F8F8F8',
+            gold: '#D4AF37',
+            navymuted: '#1A1F2E',
+            glass: 'rgba(255, 255, 255, 0.05)',
+          },
+          fontFamily: {
+            sans: ['Inter', 'Poppins', 'system-ui', 'sans-serif'],
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.6s ease-out',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+            float: { '0%': { transform: 'translateY(0px)' }, '50%': { transform: 'translateY(-10px)' }, '100%': { transform: 'translateY(0px)' } },
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #0A0A0A; color: #F8F8F8; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+    .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(212, 175, 55, 0.15); border-radius: 2rem; }
+    .gold-glow { box-shadow: 0 0 15px rgba(212, 175, 55, 0.2); }
+    .service-card, .portfolio-item, .testimonial-card { transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1); }
+    .service-card:hover, .portfolio-item:hover { transform: translateY(-6px); border-color: #D4AF37; box-shadow: 0 20px 35px -12px rgba(0,0,0,0.5); }
+    .whatsapp-float { position: fixed; bottom: 28px; right: 28px; z-index: 100; background: #25D366; border-radius: 60px; padding: 12px 24px; display: flex; align-items: center; gap: 12px; font-weight: 600; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3); transition: transform 0.2s; }
+    .whatsapp-float:hover { transform: scale(1.03); background: #20b859; }
+    @media (max-width: 640px) { .whatsapp-float span { display: none; } .whatsapp-float { padding: 14px; border-radius: 50px; } }
+    input, select, textarea { background: #1A1F2E; border: 1px solid #2a2f40; color: #F8F8F8; border-radius: 1rem; padding: 0.75rem 1rem; outline: none; transition: all 0.2s; }
+    input:focus, select:focus, textarea:focus { border-color: #D4AF37; box-shadow: 0 0 0 2px rgba(212,175,55,0.2); }
+    .btn-primary { background: linear-gradient(135deg, #D4AF37 0%, #B8962E 100%); color: #0A0A0A; font-weight: 700; padding: 0.85rem 1.8rem; border-radius: 2rem; transition: all 0.2s; }
+    .btn-primary:hover { transform: scale(0.98); box-shadow: 0 8px 20px rgba(212,175,55,0.3); }
+    .btn-outline { border: 1px solid #D4AF37; color: #D4AF37; background: transparent; border-radius: 2rem; padding: 0.85rem 1.8rem; font-weight: 600; transition: 0.2s; }
+    .btn-outline:hover { background: rgba(212,175,55,0.1); }
+    .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(8px); align-items: center; justify-content: center; z-index: 200; }
+    .modal.active { display: flex; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #1A1F2E; }
+    ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- WHATSAPP FLOATING BUTTON (pre-filled) -->
+  <a href="https://wa.me/2347064667441?text=Hi%20WIX%20HUB%2C%20I%20want%20to%20order%20a%20website.%20Please%20share%20your%20packages%20and%20availability." target="_blank" rel="noopener" class="whatsapp-float text-white">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12.032 2.004c-5.514 0-9.996 4.48-9.996 9.992 0 1.76.456 3.479 1.32 4.99L2 22l5.174-1.354c1.455.79 3.092 1.214 4.78 1.214 5.513 0 9.996-4.48 9.996-9.992s-4.483-9.992-9.996-9.992zM12.032 20.3c-1.486 0-2.95-.4-4.212-1.146l-.302-.18-3.074.806.822-2.997-.196-.31c-.863-1.37-1.32-2.95-1.32-4.587 0-4.608 3.75-8.356 8.357-8.356 4.608 0 8.357 3.748 8.357 8.356 0 4.607-3.75 8.356-8.357 8.356zm4.58-6.253c-.252-.126-1.492-.736-1.722-.822-.23-.085-.398-.126-.565.126-.167.252-.646.822-.792.99-.146.168-.292.19-.542.064-.25-.126-1.055-.388-2.008-1.238-.742-.66-1.243-1.476-1.388-1.727-.146-.25-.016-.385.11-.51.112-.112.252-.292.378-.438.126-.146.168-.252.252-.42.084-.168.042-.316-.02-.442-.064-.126-.566-1.363-.775-1.866-.204-.49-.41-.424-.565-.43-.146-.006-.313-.006-.48-.006-.168 0-.44.063-.67.316-.23.252-.878.857-.878 2.09 0 1.233.9 2.424 1.026 2.59.126.168 1.77 2.7 4.288 3.785.6.258 1.068.412 1.433.527.602.19 1.15.163 1.583.099.483-.072 1.492-.61 1.703-1.198.21-.587.21-1.09.147-1.195-.063-.105-.23-.168-.482-.294z"/></svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <main class="max-w-[1600px] mx-auto overflow-hidden px-4 md:px-6">
+    
+    <!-- HERO SECTION -->
+    <section class="min-h-[90vh] flex items-center justify-center py-20 relative">
+      <div class="absolute top-40 right-10 w-72 h-72 bg-gold/5 rounded-full blur-[100px]"></div>
+      <div class="text-center max-w-4xl mx-auto animate-[fadeUp_0.6s_ease-out]">
+        <span class="inline-block text-gold text-sm tracking-widest uppercase mb-4 border-b border-gold/40 pb-1">Global Website Design Studio</span>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight">Premium Websites <br>for <span class="text-gold">Global Brands</span></h1>
+        <p class="text-gray-300 text-lg md:text-xl mt-6 max-w-2xl mx-auto">Custom, fast, conversion-focused sites. Built in 3-5 days. Chat or order directly.</p>
+        <div class="flex flex-wrap gap-5 justify-center mt-10">
+          <a href="https://wa.me/2347064667441?text=Hi%20WIX%20HUB%2C%20I%20need%20a%20premium%20website" target="_blank" class="btn-primary inline-flex gap-2 items-center">💬 Chat on WhatsApp</a>
+          <a href="#order-form" class="btn-outline inline-flex gap-2 items-center">📋 Place Order</a>
+        </div>
+        <p class="text-sm text-gray-400 mt-8">✦ Trusted by clients in Nigeria, UK, US, Canada ✦</p>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="py-20 max-w-5xl mx-auto text-center border-t border-white/5">
+      <h2 class="text-3xl md:text-4xl font-bold text-offwhite">Crafted for <span class="text-gold">ambitious founders</span></h2>
+      <div class="w-20 h-0.5 bg-gold mx-auto my-5"></div>
+      <p class="text-gray-300 text-lg leading-relaxed">WIX HUB builds websites that make brands look premium and win customers. Based in Niger State, I work with clients across Africa, Europe & US. No templates. Just clean, fast code that converts — with modern design and bulletproof performance.</p>
+    </section>
+
+    <!-- SERVICES + PRICING CARDS (with Order Now) -->
+    <section class="py-16" id="services">
+      <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold">Services & Pricing</h2><p class="text-gray-400 mt-2">Fixed rates — transparent, no surprises</p></div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <!-- card 1 -->
+        <div class="glass-card p-6 rounded-2xl service-card"><h3 class="text-2xl font-bold text-gold">Landing Page</h3><p class="text-sm text-gray-300 mt-1">High-converting, one-page design</p><div class="text-3xl font-bold mt-4">$150</div><ul class="mt-4 space-y-2 text-sm text-gray-200"><li>✓ Fully responsive</li><li>✓ SEO optimized</li><li>✓ Contact form + map</li></ul><a href="https://wa.me/2347064667441?text=I%20want%20to%20order%20a%20Landing%20Page%20($150)%20from%20WIX%20HUB" target="_blank" class="block w-full text-center mt-6 py-2 border border-gold/50 rounded-full text-gold text-sm font-semibold hover:bg-gold/10">Order via WhatsApp →</a></div>
+        <!-- card 2 -->
+        <div class="glass-card p-6 rounded-2xl service-card"><h3 class="text-2xl font-bold text-gold">Business Website</h3><p class="text-sm text-gray-300 mt-1">Multi-page, brand-focused</p><div class="text-3xl font-bold mt-4">$350</div><ul class="mt-4 space-y-2 text-sm text-gray-200"><li>✓ 5 pages + CMS ready</li><li>✓ Custom design</li><li>✓ Performance optimized</li></ul><a href="https://wa.me/2347064667441?text=I%20want%20to%20order%20a%20Business%20Website%20($350)%20from%20WIX%20HUB" target="_blank" class="block w-full text-center mt-6 py-2 border border-gold/50 rounded-full text-gold text-sm font-semibold hover:bg-gold/10">Order via WhatsApp →</a></div>
+        <!-- card 3 -->
+        <div class="glass-card p-6 rounded-2xl service-card"><h3 class="text-2xl font-bold text-gold">Portfolio Site</h3><p class="text-sm text-gray-300 mt-1">Showcase work with style</p><div class="text-3xl font-bold mt-4">$250</div><ul class="mt-4 space-y-2 text-sm text-gray-200"><li>✓ Gallery & case studies</li><li>✓ Lightbox & animations</li><li>✓ Social proof ready</li></ul><a href="https://wa.me/2347064667441?text=I%20want%20to%20order%20a%20Portfolio%20Website%20($250)%20from%20WIX%20HUB" target="_blank" class="block w-full text-center mt-6 py-2 border border-gold/50 rounded-full text-gold text-sm font-semibold hover:bg-gold/10">Order via WhatsApp →</a></div>
+        <!-- card 4 -->
+        <div class="glass-card p-6 rounded-2xl service-card"><h3 class="text-2xl font-bold text-gold">Website Redesign</h3><p class="text-sm text-gray-300 mt-1">Modernize, boost conversions</p><div class="text-3xl font-bold mt-4">$300</div><ul class="mt-4 space-y-2 text-sm text-gray-200"><li>✓ UX audit & revamp</li><li>✓ Speed improvements</li><li>✓ Full redesign</li></ul><a href="https://wa.me/2347064667441?text=I%20want%20to%20order%20a%20Website%20Redesign%20($300)%20from%20WIX%20HUB" target="_blank" class="block w-full text-center mt-6 py-2 border border-gold/50 rounded-full text-gold text-sm font-semibold hover:bg-gold/10">Order via WhatsApp →</a></div>
+      </div>
+    </section>
+
+    <!-- HOW I BUILD (3 steps + image) -->
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div><h2 class="text-3xl font-bold">How I build your <span class="text-gold">premium site</span></h2><div class="space-y-6 mt-6"><div class="flex gap-4"><div class="text-gold font-bold text-2xl">01</div><div><h3 class="text-xl font-semibold">Discovery Call</h3><p class="text-gray-300">Understand your brand, audience & goals — 30min deep dive.</p></div></div><div class="flex gap-4"><div class="text-gold font-bold text-2xl">02</div><div><h3 class="text-xl font-semibold">Design & Code</h3><p class="text-gray-300">Custom UI, responsive dev, interactive prototype within days.</p></div></div><div class="flex gap-4"><div class="text-gold font-bold text-2xl">03</div><div><h3 class="text-xl font-semibold">Launch + Support</h3><p class="text-gray-300">Deploy, test, 30-day aftercare & WhatsApp support.</p></div></div></div></div>
+        <div class="rounded-2xl overflow-hidden shadow-2xl"><img data-src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800" alt="website development process" class="w-full h-auto object-cover" data-lazy="true"></div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO GRID (6 mockups) -->
+    <section class="py-16"><div class="text-center mb-12"><h2 class="text-3xl font-bold">Recent builds</h2><p class="text-gray-400">Live projects for global clients</p></div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="portfolio-item glass-card p-4 rounded-xl"><img data-src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="website mockup" class="rounded-lg w-full" data-lazy="true"><div class="flex justify-between mt-3"><span class="text-sm text-gold">Fashion Brand</span><div><a href="#" class="text-xs text-white/60 hover:text-gold">View Live ↗</a><a href="https://wa.me/2347064667441?text=I%20want%20a%20similar%20site%20to%20Fashion%20Brand" target="_blank" class="ml-3 text-xs text-gold">Order Similar</a></div></div></div>
+        <div class="portfolio-item glass-card p-4 rounded-xl"><img data-src="https://images.pexels.com/photos/4439901/pexels-photo-4439901.jpeg?auto=compress&cs=tinysrgb&w=600" alt="startup website" class="rounded-lg w-full" data-lazy="true"><div class="flex justify-between mt-3"><span class="text-sm text-gold">SaaS Startup</span><div><a href="#" class="text-xs text-white/60 hover:text-gold">View Live ↗</a><a href="https://wa.me/2347064667441?text=I%20want%20a%20site%20like%20SaaS%20startup" target="_blank" class="ml-3 text-xs text-gold">Order Similar</a></div></div></div>
+        <div class="portfolio-item glass-card p-4 rounded-xl"><img data-src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" alt="portfolio design" class="rounded-lg w-full" data-lazy="true"><div class="flex justify-between mt-3"><span class="text-sm text-gold">Creative Agency</span><div><a href="#" class="text-xs text-white/60 hover:text-gold">View Live ↗</a><a href="https://wa.me/2347064667441?text=I%20want%20a%20creative%20agency%20website" target="_blank" class="ml-3 text-xs text-gold">Order Similar</a></div></div></div>
+        <div class="portfolio-item glass-card p-4 rounded-xl"><img data-src="https://images.pexels.com/photos/5900412/pexels-photo-5900412.jpeg?auto=compress&cs=tinysrgb&w=600" alt="ecommerce mockup" class="rounded-lg w-full" data-lazy="true"><div class="flex justify-between mt-3"><span class="text-sm text-gold">E‑commerce Store</span><div><a href="#" class="text-xs text-white/60 hover:text-gold">View Live ↗</a><a href="https://wa.me/2347064667441?text=I%20need%20an%20ecommerce%20site%20similar" target="_blank" class="ml-3 text-xs text-gold">Order Similar</a></div></div></div>
+        <div class="portfolio-item glass-card p-4 rounded-xl"><img data-src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=600" alt="business consulting website" class="rounded-lg w-full" data-lazy="true"><div class="flex justify-between mt-3"><span class="text-sm text-gold">Consulting Firm</span><div><a href="#" class="text-xs text-white/60 hover:text-gold">View Live ↗</a><a href="https://wa.me/2347064667441?text=Consulting%20website%20inquiry" target="_blank" class="ml-3 text-xs text-gold">Order Similar</a></div></div></div>
+        <div class="portfolio-item glass-card p-4 rounded-xl"><img data-src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=600" alt="restaurant website" class="rounded-lg w-full" data-lazy="true"><div class="flex justify-between mt-3"><span class="text-sm text-gold">Restaurant Brand</span><div><a href="#" class="text-xs text-white/60 hover:text-gold">View Live ↗</a><a href="https://wa.me/2347064667441?text=I%20need%20a%20restaurant%20website" target="_blank" class="ml-3 text-xs text-gold">Order Similar</a></div></div></div>
+      </div>
+    </section>
+
+    <!-- WHY GLOBAL CLIENTS CHOOSE ME -->
+    <section class="py-16 bg-[#111217] rounded-3xl my-8"><div class="max-w-5xl mx-auto text-center"><h2 class="text-3xl font-bold">Why global clients choose me</h2><div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10"><div class="p-5"><span class="text-3xl block">⚡</span><p class="font-bold mt-2">Fast 3-5 Day Delivery</p><p class="text-sm text-gray-400">No months of waiting — launch quickly</p></div><div class="p-5"><span class="text-3xl block">📱</span><p class="font-bold mt-2">Mobile-First & Under 2s</p><p class="text-sm text-gray-400">Optimized for global speed</p></div><div class="p-5"><span class="text-3xl block">💬</span><p class="font-bold mt-2">WhatsApp Support + After Sales</p><p class="text-sm text-gray-400">30-day free support, then ongoing</p></div><div class="p-5"><span class="text-3xl block">🔒</span><p class="font-bold mt-2">Secure Payments</p><p class="text-sm text-gray-400">50% deposit, 50% on completion</p></div></div></div></section>
+
+    <!-- ORDER FORM & LIVE CHAT SECTION -->
+    <section id="order-form" class="py-20"><div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12"><div><h2 class="text-3xl font-bold">Start your <span class="text-gold">project</span></h2><p class="text-gray-300 mt-2">Fill the form or chat with me directly — I’ll reply within 2 hours.</p><div class="mt-6 glass-card p-6 rounded-2xl"><form id="orderQuoteForm" class="space-y-4"><div><input type="text" id="fullName" placeholder="Full name" required></div><div><input type="email" id="emailAddress" placeholder="Email address" required></div><div><input type="tel" id="whatsappNumber" placeholder="WhatsApp number" required></div><div><select id="projectType"><option>Select project type</option><option>Landing Page ($150)</option><option>Business Website ($350)</option><option>Portfolio Site ($250)</option><option>Website Redesign ($300)</option></select></div><div><input type="number" id="budget" placeholder="Budget (USD)"></div><div><textarea rows="3" id="briefMsg" placeholder="Tell me about your brand & requirements"></textarea></div><button type="submit" class="btn-primary w-full">Send Request →</button><p id="formStatus" class="text-xs text-gold text-center mt-2"></p></form></div></div><div class="flex flex-col gap-6"><div class="glass-card p-6 rounded-2xl"><h3 class="text-xl font-semibold">💬 Live chat (WhatsApp)</h3><p class="text-gray-300 text-sm my-2">Instant replies for project discussions.</p><a href="https://wa.me/2347064667441?text=I'd%20like%20to%20discuss%20my%20website%20project" target="_blank" class="inline-flex items-center gap-2 bg-[#25D366] px-5 py-2 rounded-full text-white mt-2">Open WhatsApp Chat →</a></div><div class="glass-card p-6 rounded-2xl"><h3 class="text-xl font-semibold">⚡ Global availability</h3><p class="text-gray-300 text-sm">Niger State, Nigeria ↔ Worldwide. Remote & seamless.</p><div class="mt-3 text-gold text-sm">+234 706 466 7441</div></div></div></div></section>
+
+    <!-- TESTIMONIALS global clients -->
+    <section class="py-16"><div class="text-center mb-8"><h2 class="text-3xl font-bold">Trusted worldwide</h2></div><div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto"><div class="testimonial-card glass-card p-6 rounded-xl"><div class="flex text-gold text-lg">★★★★★</div><p class="mt-3 text-gray-200">“WIX HUB delivered my business site in 4 days — exceeded expectations. Clean code, fast.”</p><p class="mt-4 font-bold">— Michael, 🇺🇸 USA</p></div><div class="testimonial-card glass-card p-6 rounded-xl"><div class="flex text-gold text-lg">★★★★★</div><p class="mt-3 text-gray-200">“Professional, responsive, and the after-sales support is golden. Highly recommend!”</p><p class="mt-4 font-bold">— Adaeze, 🇳🇬 Nigeria</p></div><div class="testimonial-card glass-card p-6 rounded-xl"><div class="flex text-gold text-lg">★★★★★</div><p class="mt-3 text-gray-200">“Got a portfolio site that makes me look premium. Great communication from Niger state.”</p><p class="mt-4 font-bold">— Sophie, 🇬🇧 London</p></div></div></section>
+
+    <!-- FAQ -->
+    <section class="py-16 max-w-4xl mx-auto"><h2 class="text-3xl font-bold text-center">Frequently asked</h2><div class="mt-10 space-y-5"><details class="glass-card p-5 rounded-xl"><summary class="font-semibold cursor-pointer text-gold">⏱ Delivery time?</summary><p class="text-gray-300 mt-2">Standard 3–5 days for most projects. Complex e‑commerce up to 7 days.</p></details><details class="glass-card p-5 rounded-xl"><summary class="font-semibold cursor-pointer text-gold">🔄 Revisions & changes?</summary><p class="text-gray-300 mt-2">Unlimited revisions until you’re satisfied, within scope.</p></details><details class="glass-card p-5 rounded-xl"><summary class="font-semibold cursor-pointer text-gold">💳 Payment terms?</summary><p class="text-gray-300 mt-2">50% deposit to start, 50% before final launch. Stripe/PayPal/bank transfer.</p></details><details class="glass-card p-5 rounded-xl"><summary class="font-semibold cursor-pointer text-gold">🛠 Post-launch support?</summary><p class="text-gray-300 mt-2">30 days free support, then affordable maintenance plans.</p></details></div></section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/10 py-10 text-center text-gray-400 text-sm"><p class="text-gold font-semibold">WIX HUB</p><p>© 2026 WIX HUB — Niger State, Nigeria | Available Globally</p><div class="flex justify-center gap-6 mt-3"><a href="https://wa.me/2347064667441" class="hover:text-gold">WhatsApp</a><a href="#" class="hover:text-gold">Email: hello@wixhub.com</a><a href="#" class="hover:text-gold">Privacy</a></div></footer>
+  </main>
+
+  <script>
+    // Lazy loading images
+    const lazyImgs = document.querySelectorAll('[data-lazy="true"]');
+    if ('IntersectionObserver' in window) {
+      let observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if(entry.isIntersecting) { const img = entry.target; img.src = img.dataset.src; img.classList.add('loaded'); observer.unobserve(img); } });
+      }, { rootMargin: "200px" });
+      lazyImgs.forEach(img => observer.observe(img));
+    } else { lazyImgs.forEach(img => { if(img.dataset.src) img.src = img.dataset.src; }); }
+
+    // Order form: send alert + redirect to WhatsApp prepopulated + optional email simulation
+    const form = document.getElementById('orderQuoteForm');
+    const statusDiv = document.getElementById('formStatus');
+    if(form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('fullName')?.value.trim();
+        const email = document.getElementById('emailAddress')?.value.trim();
+        const wp = document.getElementById('whatsappNumber')?.value.trim();
+        const project = document.getElementById('projectType')?.value;
+        const budget = document.getElementById('budget')?.value;
+        const msg = document.getElementById('briefMsg')?.value;
+        if(!name || !email || !wp) { statusDiv.innerText = "❌ Name, email & WhatsApp required."; statusDiv.style.color="#D4AF37"; return; }
+        const details = `New order request from ${name}%0A📧 ${email}%0A📞 ${wp}%0A📌 Project: ${project}%0A💰 Budget: $${budget}%0A💬 Message: ${msg}`;
+        window.open(`https://wa.me/2347064667441?text=${details}`, '_blank');
+        statusDiv.innerText = "✓ Request sent! Redirecting to WhatsApp. I'll respond within 2h.";
+        setTimeout(() => form.reset(), 1500);
+      });
+    }
+
+    // smooth anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { const href = this.getAttribute('href'); if(href && href !== "#") { const target = document.querySelector(href); if(target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); } } }); });
+  </script>
+  <!-- IMAGE REPLACE INSTRUCTIONS (comment block) 
+    🔁 HOW TO REPLACE IMAGES: 
+    - In .grid.md\:grid-cols-2 .rounded-2xl img: change data-src attribute to your own developer/laptop images.
+    - Portfolio grid: replace each img data-src with your project mockups. 
+    - All text globally editable: services pricing, testimonials, FAQ. 
+    - WhatsApp number: +2347064667441 appears multiple times (footer, buttons, form). Update if needed.
+    - For live chat widget, current implementation uses WhatsApp link. For more advanced live chat, embed Tawk.to or similar.
+  -->
+</body>
+</html>
